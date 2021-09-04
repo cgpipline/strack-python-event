@@ -1,5 +1,4 @@
 # coding=utf8
-# Copyright (c) 2019 CineUse
 
 import lucidity
 from std_strack.build_full_template_path import build_full_template_path
@@ -54,8 +53,9 @@ class StrackTemplate(lucidity.Template):
 
 if __name__ == '__main__':
     template = StrackTemplate('code', '{a.b}/{a.c}')
-    print template.pattern
-    print template.keys()
+    print(template.pattern)
+    print(template.keys())
     from std_py.AdvFormatter import AdvFormatter
+
     fmt = AdvFormatter()
-    print fmt.format(template.pattern, **{'a.c': 'adb'})
+    print(fmt.format(template.pattern, **{'a.c': 'adb'}))

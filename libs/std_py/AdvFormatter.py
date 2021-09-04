@@ -38,4 +38,4 @@ if __name__ == '__main__':
     string = "{number_of_sheep.a} sheep {has} run away"
     other_dict = {'number_of_sheep': {'a': 1}}
     fmt = AdvFormatter()
-    print fmt.format(string, **other_dict)
+    print(fmt.format(string, **other_dict))
